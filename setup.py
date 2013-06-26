@@ -13,9 +13,9 @@ from setuptools import setup
 execfile(os.path.join('itsbroken', 'version.py'))
 
 setup(
-    name = 'itsbroken',
-    version=VERSION,
-    url='https://github.com/openlabs/magento/',
+    name='itsbroken',
+    version=VERSION,        # noqa
+    url='https://github.com/openlabs/itsbroken/',
     license='GNU Affero General Public License v3',
     author='Openlabs Technologies & Consulting (P) Limited',
     author_email='info@openlabs.co.in',
@@ -27,7 +27,7 @@ setup(
     install_requires=[
     ],
     classifiers=[
-        'Development Status :: 6 - Mature',
+        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU Affero General Public License v3',
@@ -36,5 +36,5 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
+    test_suite='tests',
 )
-
