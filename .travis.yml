@@ -1,0 +1,13 @@
+language: python
+python:
+  - "2.7"
+services:
+  - postgresql
+install:
+# OpenERP does not specify the version of pyparsing and the later
+# version only work with py3k
+  - pip install "pyparsing==1.5.7"
+  - pip install http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-latest.tar.gz
+  - python setup.py install
+script:
+  - python setup.py test_on_travis
