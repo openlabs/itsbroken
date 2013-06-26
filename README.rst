@@ -6,6 +6,16 @@ OpenERP does not have much in testing capabilities. If you find strange
 resemblance to `Tryton <http://tryton.org>`_ test cases, do not be
 confused, this work is inspired by Tryton testing.
 
+Master
+------
+
+.. image:: https://travis-ci.org/openlabs/itsbroken.png?branch=master
+
+Develop
+-------
+
+.. image:: https://travis-ci.org/openlabs/itsbroken.png?branch=develop
+
 License tl;dr;
 --------------
 
